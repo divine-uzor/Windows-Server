@@ -1,48 +1,123 @@
-# Lab 01 – System Requirements and Enabling Hyper-V
+# Lab 01: System Requirements and Enabling Hyper-V
 
 ## Overview
 
-Before creating virtual machines with Microsoft Hyper-V, it's important to ensure that your computer meets the necessary hardware and software requirements. This lab walks you through verifying your system's compatibility with Hyper-V and enabling the Hyper-V feature in Windows.
+Before creating virtual machines with Microsoft Hyper-V, verify that the computer supports the required virtualization features and that the Windows edition supports Hyper-V.
 
-By the end of this lab, your computer will be ready for creating and managing virtual machines.
+This lab covers checking the Windows edition, reviewing hardware and virtualization requirements, enabling Hyper-V, restarting the computer, and confirming that Hyper-V Manager is available.
 
 ## Objectives
 
-After completing this lab, you will be able to:
+By the end of this lab, you should be able to:
 
-- Verify that your Windows edition supports Hyper-V.
-- Understand the minimum hardware requirements for Hyper-V.
+- Check whether your Windows edition supports Hyper-V.
+- Identify the minimum hardware and virtualization requirements.
 - Check whether hardware virtualization is enabled.
-- Enable the Hyper-V feature in Windows.
-- Restart your computer to complete the installation.
-- Verify that Hyper-V has been installed successfully.
-
-## Topics Covered
-
-- Hyper-V system requirements
-- Supported Windows editions
-- Processor, memory and virtualization requirements
-- Checking your Windows edition
-- Verifying virtualization support
-- Enabling Hyper-V through Windows Features
-- Confirming a successful Hyper-V installation
+- Enable Hyper-V through Windows Features.
+- Restart Windows to complete installation.
+- Verify that Hyper-V Manager is available.
 
 ## Prerequisites
 
-Before starting this lab, complete the **Foundations** section to understand virtualization, hypervisors and the role of Microsoft Hyper-V in modern IT infrastructure.
+- A Windows computer running a supported edition of Windows.
+- Access to Windows settings and Windows Features with permission to enable optional Windows features.
+- Hardware virtualization support enabled in the computer's BIOS/UEFI.
+- Administrator access may be required to enable Hyper-V and restart the computer.
 
-## Documentation
+## System requirements
 
-The complete step-by-step guide for this lab is available below.
+The original lab guide lists the following requirements:
 
-📄 [Lab 01 - System Requirements and Enabling Hyper-V.pdf](./Lab%2001%20-%20System%20Requirements%20and%20Enabling%20Hyper-V.pdf)
+| Requirement | Description |
+|---|---|
+| Operating system | Windows 10/11 Pro, Enterprise, or Education. Hyper-V is not available on Windows Home by default. |
+| Processor | 64-bit CPU with Second Level Address Translation (SLAT). |
+| RAM | Minimum 4 GB; 8 GB or more recommended. |
+| Hardware virtualization | Intel VT-x or AMD-V enabled in BIOS/UEFI. |
+| Data Execution Prevention (DEP) | Hardware-enforced DEP enabled. |
 
-## Learning Outcome
+These are the requirements listed in the source lab. Actual performance will depend on the host computer and the virtual machines you plan to run.
 
-Upon completing this lab, your computer will be fully prepared to host virtual machines using Microsoft Hyper-V. You'll also understand the hardware and software prerequisites required for virtualization and how to verify that Hyper-V has been installed correctly.
+## Procedure 1: Check your Windows edition
 
-## Next Step
+1. Open **Settings**.
+2. Select **System**.
+3. Select **About**.
 
-**Lab 02 – Create Your First Hyper-V Virtual Machine**
+![Open Windows Settings and navigate to System](images/01-open-system-settings.png)
 
-In the next lab, you'll create your first virtual machine, configure its hardware settings, and install an operating system using Microsoft Hyper-V.
+4. Review the Windows specifications to identify your Windows edition.
+
+![Review the Windows edition in About](images/02-check-windows-edition.png)
+
+Confirm that the installed edition supports Hyper-V before continuing.
+
+## Procedure 2: Check whether virtualization is enabled
+
+1. Open **Task Manager**.
+
+![Open Task Manager Performance](images/03-task-manager-performance.png)
+
+
+2. Select the **Performance** tab.
+3. Find the **Virtualization** entry and check that it says **Enabled**.
+
+
+![Check virtualization status in CPU performance details](images/04-check-virtualization-status.png)
+
+If virtualization is disabled, check your computer manufacturer's instructions for enabling Intel VT-x or AMD-V in BIOS/UEFI. The exact menu and wording depend on the computer.
+
+## Procedure 3: Open Windows Features
+
+1. Select **Start** or press the **Windows** key.
+2. Search for `Turn Windows features on or off`.
+3. Open the matching result.
+
+![Find Turn Windows features on or off](images/05-open-windows-features.png)
+
+## Procedure 4: Enable Hyper-V
+
+1. In the **Windows Features** window, locate **Hyper-V**.
+2. Select the **Hyper-V** checkbox.
+3. Allow Windows to select the required Hyper-V components.
+4. Select **OK**.
+
+![Select Hyper-V in Windows Features](images/06-select-hyper-v-feature.png)
+
+Windows will begin applying the requested changes.
+
+## Procedure 5: Complete installation and restart
+
+1. Wait while Windows searches for the required files and installs Hyper-V.
+2. When prompted, select **Restart now**.
+3. Allow the computer to restart before trying to use Hyper-V.
+
+Save any open work before restarting.
+
+## Procedure 6: Verify Hyper-V installation
+
+1. After the computer restarts, open **Start**.
+2. Search for **Hyper-V Manager**.
+3. Confirm that Hyper-V Manager appears in the search results.
+4. Open Hyper-V Manager to check that it launches.
+
+![Verify Hyper-V Manager is available](images/07-verify-hyper-v-manager.png)
+
+If Hyper-V Manager is available, the installation step has completed. Hyper-V is ready for you to begin preparing virtual machines, subject to the host's configuration and available resources.
+
+![Final verification of Hyper-V installation](images/08-final-verification.png)
+
+
+## Troubleshooting notes
+
+- **Hyper-V is not listed in Windows Features:** Confirm that the Windows edition supports Hyper-V and that the computer meets the virtualization requirements.
+- **Virtualization is disabled:** Check BIOS/UEFI settings and your computer manufacturer's documentation.
+- **Hyper-V Manager does not appear after restarting:** Recheck the Windows Features selection and whether installation completed successfully.
+
+## Outcome
+
+This lab checks the host computer's Hyper-V compatibility, enables the Hyper-V feature, and verifies that Hyper-V Manager is available.
+
+## Next step
+
+Continue to **Lab 02: Preparing the Environment and Creating a Windows Server 2019 Virtual Machine** to prepare the virtual machine environment.
