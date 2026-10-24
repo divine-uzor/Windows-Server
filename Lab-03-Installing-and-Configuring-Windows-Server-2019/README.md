@@ -127,7 +127,7 @@ Check that the Ethernet adapter displays the static IPv4 address and subnet mask
 
 ![Verify the IPv4 configuration with ipconfig](images/09-verify-ip-configuration.png)
 
-### Step 2: Confirm Server Manager is available
+### Step 2: Verify the build
 
 Open or return to Server Manager and confirm that the **Local Server** page loads.
 
