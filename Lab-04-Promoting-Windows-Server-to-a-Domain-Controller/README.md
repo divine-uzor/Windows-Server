@@ -146,4 +146,4 @@ For this lab, we will use divineuzor.com.
 
 ## Up Next
 
-We now have a fully functioning Domain Controller for the divineuzor.com forest. The workgroup is gone, replaced by centralized identity and security management. Part 5 of this series will pick up from here: creating our first domain user account and exploring how identity now flows from this one central point.
+We now have a fully functioning Domain Controller for the divineuzor.com forest. The workgroup is gone, replaced by centralized identity and security management. The next lab in this series will pick up from here: creating our first domain user account and exploring how identity now flows from this one central point.
