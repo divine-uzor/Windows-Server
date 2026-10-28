@@ -2,7 +2,7 @@
 
 ## Lab Exercise
 
-This lab builds on Part 3 of this series, where we installed the Active Directory Domain Services (AD DS) role and promoted our Windows Server to a Domain Controller (`divineuzor.com`). All tasks in this guide will be performed on that Domain Controller.
+This lab continues from Lab 4, where we installed the Active Directory Domain Services (AD DS) role and promoted Windows Server to a Domain Controller for the `divineuzor.com` domain. All tasks in this lab will be performed on that Domain Controller.
 
 By the end of this lab, we will:
 
