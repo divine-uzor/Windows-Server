@@ -1,10 +1,10 @@
 # Building a Windows Server Lab on Hyper-V
 
-## Part 3: Post-Installation Configuration and Promoting the Server to a Domain Controller
+## Post-Installation Configuration and Promoting the Server to a Domain Controller
 
-Part 1 of this series covered the preparatory steps and the creation of the virtual machine in Hyper-V Manager. Part 2 covered installing Windows Server 2019 and completing initial post-installation configuration, ending with a clean, verified baseline server with a static IP address on our isolated private switch.
+This lab continues from the previous lab, where we installed Windows Server 2019 and completed the initial post-installation configuration. With the server ready, we will carry out a few additional configuration tasks before installing Active Directory Domain Services (AD DS) and promoting the server to a Domain Controller (DC).
 
-In this part, we continue with a few standard post-installation steps, then take the actual step that turns this server from a plain standalone machine into the foundation of our lab environment. We install Active Directory Domain Services (AD DS) and promote the server to a Domain Controller (DC).
+This process transforms the standalone server into the foundation of our Active Directory lab environment, allowing us to manage domain users, groups, organizational units, and other directory services in subsequent labs.
 
 ## Step 1: Post-Installation Configuration
 
