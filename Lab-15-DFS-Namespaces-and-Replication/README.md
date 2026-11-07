@@ -365,8 +365,7 @@ targets](images/32-Verify-Reports-Folder-Targets.png)
 ![Verify replication group
 memberships](images/33-Verify-Replication-Group-Memberships.png)
 
-Note: A hidden DfsrPrivate folder may appear inside the replicated
-folders. This is normal. DFS Replication uses it for its own work.
+Note: A hidden DfsrPrivate folder may appear inside the replicated folder. This folder is created and managed by the DFS Replication service. It contains internal working folders, including Staging and ConflictAndDeleted, which support replication processing and file-conflict handling. Do not manually delete or modify it.
 
 ## 11. Part 8: Test Replication
 
@@ -430,9 +429,7 @@ Confirm that:
 -   The replication group has two members, and files created on either
     server appear on the other.
 
-## 13. Troubleshooting
 
-  -----------------------------------------------------------------------
   ## 13. Troubleshooting
 
 | Problem | What to check |
