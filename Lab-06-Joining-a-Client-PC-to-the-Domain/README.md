@@ -4,11 +4,11 @@ With the `divineuzor.com` Active Directory domain, departmental OUs, user accoun
 
 This lab covers creating a Windows 10 Pro virtual machine in Hyper-V, installing and configuring the client operating system, planning and assigning its IPv4 settings, configuring DNS to use the Domain Controller, testing network connectivity, and joining the workstation to the `divineuzor.com` domain. It also verifies domain sign-in and the computer object in Active Directory.
 
-The result is a domain-joined client workstation that can participate in the centralized identity and administration environment established in the earlier stages.
+You will finish with a domain-joined client workstation that can participate in the centralized identity and administration environment established in the earlier stages.
 
 ## Objectives
 
-By the end of this lab, we will:
+By the end of this lab, you will be able to:
 
 - Create a Windows 10 Pro client virtual machine in Hyper-V.
 - Install Windows 10 Pro and complete its initial setup.
