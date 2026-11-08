@@ -2,9 +2,9 @@
 
 ## Post-Installation Configuration and Promoting the Server to a Domain Controller
 
-This lab continues from the previous lab, where we installed Windows Server 2019 and completed the initial post-installation configuration. With the server ready, we will carry out a few additional configuration tasks before installing Active Directory Domain Services (AD DS) and promoting the server to a Domain Controller (DC).
+This stage of the Windows Server Infrastructure Project prepares the installed Windows Server 2019 system for centralized identity and access management. Building on the initial server configuration completed in Lab 03, this lab covers post-installation tasks, installation of the Active Directory Domain Services (AD DS) role, and promotion of the server to the first Domain Controller (DC) in a new forest.
 
-This process transforms the standalone server into the foundation of our Active Directory lab environment, allowing us to manage domain users, groups, organizational units, and other directory services in subsequent labs.
+The resulting `divineuzor.com` domain provides the central directory environment used in the following labs to organize computers and users, manage groups, and apply domain-based security and administration.
 
 ## Step 1: Post-Installation Configuration
 
@@ -146,4 +146,6 @@ For this lab, we will use divineuzor.com.
 
 ## Up Next
 
-We now have a fully functioning Domain Controller for the divineuzor.com forest. The workgroup is gone, replaced by centralized identity and security management. The next lab in this series will pick up from here: creating our first domain user account and exploring how identity now flows from this one central point.
+The Windows Server system has been promoted to the first Domain Controller for the `divineuzor.com` forest. The environment now has an Active Directory domain that can provide centralized identity and security management for domain users and computers.
+
+Continue to **Lab 05: Active Directory Domain Services (AD DS)** to create the organizational unit structure, provision domain user accounts, and organize users into a security group.
