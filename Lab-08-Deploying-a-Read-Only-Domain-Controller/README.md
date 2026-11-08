@@ -200,6 +200,11 @@ Understanding why the RODC option exists, how its Password Replication Policy wo
 
 ## Summary
 
-This lab expanded the network from a two-host `/30` subnet to a `/27` subnet to accommodate a third machine. It then configured Server 02 with a static IP address, installed AD DS, and promoted the server specifically as a Read-Only Domain Controller rather than an ordinary additional domain controller.
+You expanded the network from a two-host `/30` subnet to a `/27` subnet to accommodate a third machine. You then configured Server 02 with a static IP address, installed AD DS, and promoted the server specifically as a Read-Only Domain Controller rather than an ordinary additional domain controller.
 
-The RODC configuration was verified through the **Password Replication Policy** tab, a direct comparison of available write actions, and confirmation that an object created on DC 01 replicated to Server 02.
+You verified the RODC configuration through the **Password Replication Policy** tab, a direct comparison of available write actions, and confirmation that an object created on DC 01 replicated to Server 02.
+
+
+## Next Step
+
+Continue to **Lab 09: NTFS and Share Permissions** to apply Active Directory users and groups to shared folder access, configure NTFS and share permissions, and test how Windows evaluates access.
