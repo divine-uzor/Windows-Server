@@ -2,20 +2,22 @@
 
 ## Overview
 
-Before creating virtual machines with Microsoft Hyper-V, verify that the computer supports the required virtualization features and that the Windows edition supports Hyper-V.
+Building a Windows Server infrastructure requires a reliable virtualization platform where server systems can be deployed, configured, and managed.
 
-This lab covers checking the Windows edition, reviewing hardware and virtualization requirements, enabling Hyper-V, restarting the computer, and confirming that Hyper-V Manager is available.
+This lab establishes the foundation for the Windows Server Infrastructure Project by assessing the host computer's compatibility with Microsoft Hyper-V and enabling the required virtualization feature.
+
+Hyper-V provides the virtualization platform that will host the Windows Server virtual machines used throughout this project. Preparing the host environment first helps ensure that subsequent deployment and configuration activities can be carried out on a suitable platform.
 
 ## Objectives
 
 By the end of this lab, you should be able to:
 
-- Check whether your Windows edition supports Hyper-V.
-- Identify the minimum hardware and virtualization requirements.
-- Check whether hardware virtualization is enabled.
-- Enable Hyper-V through Windows Features.
-- Restart Windows to complete installation.
-- Verify that Hyper-V Manager is available.
+- Assess a host computer's compatibility with Microsoft Hyper-V.
+- Identify the hardware and operating system requirements for virtualization.
+- Verify that hardware virtualization is enabled.
+- Enable the Hyper-V role through Windows Features.
+- Complete the installation and verify Hyper-V Manager availability.
+- Prepare the host environment for the deployment of Windows Server virtual machines.
 
 ## Prerequisites
 
@@ -116,8 +118,8 @@ If Hyper-V Manager is available, the installation step has completed. Hyper-V is
 
 ## Outcome
 
-This lab checks the host computer's Hyper-V compatibility, enables the Hyper-V feature, and verifies that Hyper-V Manager is available.
+The host computer has been assessed for Hyper-V compatibility, the virtualization feature has been enabled, and Hyper-V Manager has been verified. This establishes the virtualization foundation required for deploying the Windows Server environment in the next stage of the project.
 
 ## Next step
 
-Continue to **Lab 02: Preparing the Environment and Creating a Windows Server 2019 Virtual Machine** to prepare the virtual machine environment.
+Continue to **Lab 02: Building a Windows Server 2019 Lab on Microsoft Hyper-V**, where the prepared virtualization platform will be used to organize the lab environment and create the first Windows Server virtual machine.
