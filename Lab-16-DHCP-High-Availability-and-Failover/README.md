@@ -319,4 +319,4 @@ Confirm that:
 
 ## Conclusion
 
-In this lab I installed and authorized the DHCP Server role on one domain controller, created and activated a scope with DNS options, and installed DHCP on a second domain controller. I then configured load-balance failover between the two servers. A client PC received its address automatically, and it kept getting addresses when one DHCP server was stopped.
+In this lab, you install and authorize the DHCP Server role on one domain controller, create and activate a scope with DNS options, and install DHCP on a second domain controller. You then configure load-balance failover between the two servers. The client PC receives its address automatically and continues to receive addresses when one DHCP server is stopped.
