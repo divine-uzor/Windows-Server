@@ -2,7 +2,7 @@
 
 ## Overview
 
-This lab demonstrates how Group Policy can be used to standardize user
+You will use Group Policy to standardize user
 desktops, provide controlled access to shared folders, and strengthen
 domain account security in a Windows Server environment.
 
@@ -384,8 +384,9 @@ OU does not change domain accounts.
 
 ## Conclusion
 
-This lab covered three Group Policy tasks: user desktop settings, drive
-mapping with item-level targeting and domain password and lockout
-policy. Together they show the difference between user and computer
-policies, how GPO linking and scope work, how share and NTFS permissions
-interact and why account policies must be set at the domain level.
+You configured three areas of Group Policy: user desktop settings, drive
+mapping with item-level targeting, and domain password and lockout
+policy. Together, these exercises demonstrate the difference between
+user and computer policies, how GPO linking and scope work, how share
+and NTFS permissions interact, and why account policies must be set at
+the domain level.
