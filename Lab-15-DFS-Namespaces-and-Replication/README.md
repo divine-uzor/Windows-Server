@@ -455,12 +455,12 @@ Confirm that:
 
 ## Conclusion
 
-In this lab I installed the DFS role services on two domain controllers,
-created a domain-based namespace, and added the shared folders from my
-earlier labs plus a new folder created on the second server. I then
-added a second namespace server and configured DFS Replication to keep a
-folder identical between both servers. Finally, I signed in to a
-domain-joined client PC as a user and opened the namespace path. The
-tests confirmed that one path reaches every folder, that changes
-replicate in both directions, and that users see the same files through
-the namespace.
+In this lab, you install the DFS role services on two domain controllers,
+create a domain-based namespace, and add the shared folders from the
+previous labs together with a new folder on the second server. You then
+add a second namespace server and configure DFS Replication to keep a
+folder synchronized between both servers. Finally, you use a
+domain-joined client PC to open the namespace path. The tests confirm
+that one path reaches the published folders, changes replicate in both
+directions, and users can access the shared content through the
+namespace.
