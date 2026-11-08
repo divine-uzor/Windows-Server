@@ -4,7 +4,7 @@
 
 ## Lab Overview
 
-This lab provides practical experience configuring and troubleshooting Group Policy in an Active Directory domain. It demonstrates how Group Policy settings are linked, processed, filtered and applied to users and computers, including how inheritance and loopback processing affect the final result.
+You will configure and troubleshoot Group Policy in an Active Directory domain. The exercises demonstrate how Group Policy settings are linked, processed, filtered, and applied to users and computers, including how inheritance and loopback processing affect the final result.
 
 ## Environment
 
@@ -315,8 +315,8 @@ Same user, same computer, same two GPOs, two different outcomes, purely because 
 
 ## Conclusion
 
-This lab took every core mechanism from the theory documentation and made it visible on screen: a domain-linked GPO overridden by an OU-linked one (LSDOU), two GPOs at the same OU resolved by Link Order, a Preference deployed with the Update action rather than a Policy setting, Security Filtering narrowing a GPO to one group, Block Inheritance being overridden by Enforced, and Loopback Processing switching between Merge and Replace.
+You applied the core Group Policy mechanisms in a working Active Directory environment: a domain-linked GPO overridden by an OU-linked one (LSDOU), two GPOs at the same OU resolved by Link Order, a Preference deployed with the Update action rather than a Policy setting, Security Filtering narrowing a GPO to one group, Block Inheritance being overridden by Enforced, and Loopback Processing switching between Merge and Replace.
 
-Ten tasks, five GPOs, and two Preference items were enough to demonstrate all of it with real, reproducible results rather than diagrams.
+Across ten tasks, five GPOs, and two Preference items, you verified these behaviours through practical, repeatable results.
 
 The Workstations OU, the test GPOs, Tobenna Eze's account, and the GPO-Pilot-Users group can all be left in place for future labs in this series, or removed if this environment is reset.
