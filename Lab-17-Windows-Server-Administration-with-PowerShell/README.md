@@ -4,7 +4,7 @@
 
 PowerShell provides a repeatable way to administer Windows Server, inspect system and network settings, manage Active Directory objects, automate account creation, run commands remotely, and generate reports.
 
-This hands-on project builds from basic PowerShell commands to practical Windows Server administration tasks in an Active Directory domain. It covers command discovery and help, system and network checks, Active Directory management, user and group administration, bulk user creation from a CSV file, remote administration of a second server, reporting, and safe cleanup.
+You will progress from basic PowerShell commands to practical Windows Server administration tasks in an Active Directory domain. The exercises cover command discovery and help, system and network checks, Active Directory management, user and group administration, bulk user creation from a CSV file, remote administration of a second server, reporting, and safe cleanup.
 
 ## Lab Environment
 
@@ -1103,4 +1103,4 @@ Confirm that:
 
 ## Conclusion
 
-In this lab I used PowerShell to administer a Windows Server domain, starting from simple commands and building up to real administration work. I searched for commands and read help, inspected a server, tested the network, explored Active Directory, created OUs, groups, and users in several ways, and created users in bulk from a CSV file. I then reviewed DHCP, services, and shares, ran commands on a second server remotely, produced reports, and cleaned up safely, with the whole session recorded in a transcript.
+You used PowerShell to administer a Windows Server domain, progressing from basic commands to practical administration tasks. You discovered commands and used help, inspected a server, tested network connectivity, explored Active Directory, created OUs, groups, and users, and provisioned users in bulk from a CSV file. You also reviewed DHCP, services, and shares, ran commands remotely on a second server, generated reports, and completed administrative cleanup with the session recorded in a transcript.
