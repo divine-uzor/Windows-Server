@@ -4,7 +4,7 @@
 
 ## Overview
 
-Managing access to shared folders requires an understanding of both NTFS permissions and share permissions. This lab puts the two permission systems into practice by creating a shared folder, assigning permissions to Active Directory users and groups, and testing how Windows evaluates access.
+You will manage access to shared folders by applying both NTFS permissions and share permissions. This lab puts the two permission systems into practice by creating a shared folder, assigning permissions to Active Directory users and groups, and testing how Windows evaluates access.
 
 The lab demonstrates two key rules:
 
@@ -233,8 +233,8 @@ Ada Obi's Effective Access result shows Write and Create actions denied because 
 
 ## Summary
 
-This lab created a shared folder, assigned NTFS and share permissions using Active Directory users and groups, and tested how Windows evaluates access.
+You created a shared folder, assigned NTFS and share permissions using Active Directory users and groups, and tested how Windows evaluates access.
 
-The practical exercises demonstrated that multiple NTFS Allow permissions combine, an explicit Deny overrides an Allow, and network access is limited by whichever is more restrictive between NTFS and share permissions. Local access on the server is governed by NTFS permissions alone.
+The exercises demonstrated that multiple NTFS Allow permissions combine, an explicit Deny overrides an Allow, and network access is limited by whichever is more restrictive between NTFS and share permissions. Local access on the server is governed by NTFS permissions alone.
 
 The `IT Projects` folder, `IT-Staff` group, and Ada Obi account can be retained for future labs or removed if the environment is being reset.
