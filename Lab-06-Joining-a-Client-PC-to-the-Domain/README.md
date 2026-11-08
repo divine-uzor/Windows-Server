@@ -1,18 +1,23 @@
 # Joining a Client PC to the Domain
 
-This lab demonstrates how to build a Windows 10 client virtual machine in Hyper-V, configure its network settings, and join it to the `divineuzor.com` Active Directory domain. It covers IP addressing, DNS configuration, connectivity testing, domain authentication, and verification of the client computer object in Active Directory.
+With the `divineuzor.com` Active Directory domain, departmental OUs, user accounts, and security group established in the previous labs, this stage of the Windows Server Infrastructure Project adds a Windows client to the domain environment.
+
+This lab covers creating a Windows 10 Pro virtual machine in Hyper-V, installing and configuring the client operating system, planning and assigning its IPv4 settings, configuring DNS to use the Domain Controller, testing network connectivity, and joining the workstation to the `divineuzor.com` domain. It also verifies domain sign-in and the computer object in Active Directory.
+
+The result is a domain-joined client workstation that can participate in the centralized identity and administration environment established in the earlier stages.
 
 ## Objectives
 
 By the end of this lab, we will:
 
-- Create a Windows 10 client virtual machine in Hyper-V.
-- Install Windows 10 Pro and complete the initial setup.
-- Understand the IP addressing scheme used in this lab.
-- Configure the domain controller and client network settings.
-- Test connectivity between the client PC and the domain controller.
+- Create a Windows 10 Pro client virtual machine in Hyper-V.
+- Install Windows 10 Pro and complete its initial setup.
+- Understand the IPv4 subnet and host addressing used in the lab.
+- Configure the domain controller and client network adapters.
+- Set the client DNS server to the Domain Controller.
+- Test connectivity between the client PC and the Domain Controller.
 - Join the client PC to the `divineuzor.com` domain.
-- Sign in with a domain account and verify the computer object in Active Directory.
+- Sign in with a domain account and verify the client computer object in Active Directory.
 
 ## Step 1: Download Windows 10
 
@@ -224,4 +229,6 @@ This is a small tidy-up step on DC 01, not on the client. Since this lab uses IP
 
 ## Up Next
 
-Two machines are now talking to each other on an isolated private network: a domain controller managing identity for `divineuzor.com`, and a Windows 10 client that trusts it. From here, future work in this series can explore moving this computer object into one of the existing OUs, applying Group Policy to it, and signing in as one of the department-specific users created in the previous lab to see permissions and policy in action.
+The `divineuzor.com` environment now includes a Domain Controller and a Windows 10 Pro client joined to the domain. The client can communicate with the Domain Controller, authenticate using domain credentials, and is represented by a computer object in Active Directory.
+
+Continue to **Lab 07: Everyday Windows Administration Tasks** to carry out common workstation administration activities on the domain-joined client, including local account and group management, user profile administration, permissions, session monitoring, workstation maintenance, and domain membership tasks.
