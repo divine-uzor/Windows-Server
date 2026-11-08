@@ -118,7 +118,7 @@ If Hyper-V Manager is available, the installation step has completed. Hyper-V is
 
 ## Outcome
 
-The host computer has been assessed for Hyper-V compatibility, the virtualization feature has been enabled, and Hyper-V Manager has been verified. This establishes the virtualization foundation required for deploying the Windows Server environment in the next stage of the project.
+You have assessed the host computer for Hyper-V compatibility, enabled the virtualization feature, and verified that Hyper-V Manager is available. The host is now prepared for the virtual machine deployment that begins in the next stage of the project.
 
 ## Next step
 
