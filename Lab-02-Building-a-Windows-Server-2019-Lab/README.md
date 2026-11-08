@@ -293,18 +293,18 @@ Without the correct virtual switch, the virtual machine will not communicate wit
 
 Before proceeding to the Windows Server installation, confirm the following:
 
-- ✅ Hyper-V environment prepared
-- ✅ VM storage location created
-- ✅ Windows Server ISO downloaded
-- ✅ Private Virtual Switch configured
-- ✅ Generation 2 virtual machine created
-- ✅ Startup memory configured
-- ✅ Virtual hard disk created
-- ✅ Installation media attached
-- ✅ Firmware verified
-- ✅ Secure Boot verified
-- ✅ Memory configuration verified
-- ✅ Network adapter verified
+- Hyper-V environment prepared
+- VM storage location created
+- Windows Server ISO downloaded
+- Private Virtual Switch configured
+- Generation 2 virtual machine created
+- Startup memory configured
+- Virtual hard disk created
+- Installation media attached
+- Firmware verified
+- Secure Boot verified
+- Memory configuration verified
+- Network adapter verified
 
 If all items above are complete, the virtual machine is ready for operating system installation.
 
