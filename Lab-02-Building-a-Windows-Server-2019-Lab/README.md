@@ -5,27 +5,24 @@
 
 ## Overview
 
-Creating a virtual machine involves much more than clicking **New → Virtual Machine**.
+With Hyper-V enabled on the host computer in Lab 01, the next stage of the Windows Server Infrastructure Project is to prepare the virtual machine environment that will host the server systems.
 
-A reliable virtualization environment begins with proper planning. Before installing an operating system, you should organize storage, prepare networking, download trusted installation media, configure the virtual machine correctly, and verify every important setting before the first boot.
+This lab focuses on creating the first Windows Server 2019 virtual machine. It covers organizing VM storage, obtaining the Windows Server installation media, creating an isolated private virtual switch, configuring a Generation 2 virtual machine, and verifying its hardware, firmware, security, memory, and network settings before installation.
 
-This lab demonstrates the complete preparation process for building a **Windows Server 2019** virtual machine using **Microsoft Hyper-V**.
-
-By following these best practices, you establish a solid foundation for future Windows Server administration and Active Directory labs.
+Completing these preparation and verification steps establishes a consistent virtual machine foundation for installing Windows Server and building the infrastructure in the subsequent labs.
 
 
 ## Learning Objectives
 
 After completing this lab, you will be able to:
 
-- Prepare a structured Hyper-V lab environment
-- Organize storage for virtual machines
-- Download the Windows Server 2019 Evaluation ISO
-- Create an isolated virtual network using a Private Virtual Switch
-- Create a Generation 2 virtual machine
-- Configure memory, networking and storage
-- Attach installation media
-- Verify the virtual machine configuration before powering it on
+- Prepare an organized Hyper-V storage location for the project virtual machines.
+- Obtain the Windows Server 2019 Evaluation ISO.
+- Create an isolated virtual network using a Private Virtual Switch.
+- Create a Generation 2 Windows Server 2019 virtual machine.
+- Configure the virtual machine's memory, networking, and virtual storage.
+- Attach the Windows Server installation media.
+- Verify the virtual machine's firmware, Secure Boot, memory, and network adapter settings before installation.
 
 ---
 
@@ -314,26 +311,14 @@ If all items above are complete, the virtual machine is ready for operating syst
 
 # Key Takeaways
 
-In this lab, you learned how to prepare a professional Hyper-V environment before installing Windows Server.
+This stage of the Windows Server Infrastructure Project establishes the virtual machine that will host the first Windows Server system. The VM storage location, isolated private network, installation media, and Generation 2 hardware configuration have been prepared and verified before operating system installation.
 
-Although creating a virtual machine takes only a few minutes, careful preparation helps avoid configuration errors and creates a more reliable virtualization environment.
-
-These same preparation practices are commonly used in enterprise environments when deploying virtual infrastructure.
+Verifying these settings at this stage provides a controlled starting point for the Windows Server installation and configuration work that follows.
 
 
 # Next Steps
 
-This guide covers the first part of building a Windows Server 2019 virtual machine on Microsoft Hyper-V.
-
-With the virtual machine successfully created and verified, the environment is now ready for operating system installation and subsequent Windows Server administration labs.
-
-In the next part, you will:
-
-- Start the virtual machine
-- Install Windows Server 2019
-- Configure the Administrator account
-- Complete the initial server setup
-- Prepare the virtual machine for future Windows Server administration and infrastructure labs
+The virtual machine is now created and its configuration has been verified. Continue to **Lab 03: Installing and Configuring Windows Server 2019** to install the operating system, configure the built-in Administrator account, assign the initial static IPv4 address, and verify the server's initial configuration.
 
 
 ⭐ If you found this guide helpful, consider starring this repository.
