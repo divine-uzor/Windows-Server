@@ -2,19 +2,22 @@
 
 ## Overview
 
-This lab covers the installation and initial configuration of Windows Server 2019 on a Hyper-V virtual machine. It continues from [Lab 02: Building a Windows Server 2019 Lab](../Lab-02-Building-a-Windows-Server-2019-Lab/README.md), where the virtual machine was created but the operating system had not yet been installed.
+With the Windows Server 2019 virtual machine created and its configuration verified in Lab 02, the next stage of the Windows Server Infrastructure Project is to install and prepare the server operating system.
 
-The goal is to install Windows Server 2019, configure the built-in Administrator account, set a static IPv4 address, and verify the initial server configuration.
+This lab covers installing Windows Server 2019 Datacenter Evaluation with Desktop Experience, setting the built-in Administrator password, configuring the server's initial static IPv4 address, and verifying the network configuration and Server Manager.
+
+Completing these initial setup tasks provides the configured server foundation for the post-installation work and Active Directory deployment in the following stages.
 
 ## Objectives
 
 By completing this lab, you will:
 
-- Start a Hyper-V virtual machine and boot from a Windows Server 2019 ISO.
+- Start the Windows Server virtual machine and boot from the attached installation media.
 - Install Windows Server 2019 Datacenter Evaluation with Desktop Experience.
-- Set the built-in Administrator password.
-- Configure a static IPv4 address.
-- Verify the network configuration and Server Manager.
+- Configure the built-in Administrator account.
+- Assign an initial static IPv4 address to the server.
+- Verify the server's network configuration and confirm that Server Manager is accessible.
+- Prepare the server for the subsequent infrastructure configuration stages.
 
 ## Prerequisites
 
@@ -137,15 +140,9 @@ At this stage, no additional server roles or features need to be installed as pa
 
 ## Expected Outcome
 
-At the end of this lab:
-
-- Windows Server 2019 is installed on the Hyper-V virtual machine.
-- You can sign in using the built-in Administrator account.
-- A static IPv4 address has been configured.
-- The network settings can be verified with `ipconfig`.
-- Server Manager opens successfully.
+Windows Server 2019 is installed on the Hyper-V virtual machine, the built-in Administrator account is configured, and an initial static IPv4 address has been assigned. The network configuration has been checked using `ipconfig`, and Server Manager opens successfully. The server is now prepared for the post-installation configuration and directory services deployment that follow.
 
 ## Next Steps
 
-The server is now ready for subsequent configuration labs. Future tasks can include hostname configuration, Active Directory Domain Services, DNS, domain controller setup, and joining client machines to the domain.
+Continue to **Lab 04: Promoting Windows Server to a Domain Controller** to complete the server's post-installation configuration, install Active Directory Domain Services, and promote the server to establish the Active Directory domain environment.
 
