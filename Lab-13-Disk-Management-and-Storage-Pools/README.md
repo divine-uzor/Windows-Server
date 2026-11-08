@@ -474,10 +474,9 @@ Confirm that:
 
 ## Lab Summary
 
-In this lab I attached three 10 GB virtual hard disks to a Windows
-Server in Hyper-V. I used one disk to practice the Disk Management
-workflow, and I combined the other two into a Storage Pool. The lab
-covered:
+In this lab, you attach three 10 GB virtual hard disks to a Windows
+Server in Hyper-V. You use one disk to practise the Disk Management
+workflow and combine the other two into a Storage Pool. You will:
 
 -   Creating and attaching virtual hard disks
 -   Bringing disks online and initializing a disk
