@@ -4,11 +4,11 @@
 
 ## Overview
 
-Managing Windows environments involves more than creating user accounts and joining computers to a domain. IT administrators must also manage user profiles, control access permissions, monitor active sessions, troubleshoot workstation issues, maintain storage, and manage domain membership.
+With the Windows 10 client joined to the `divineuzor.com` domain in Lab 06, this stage of the Windows Server Infrastructure Project focuses on the day-to-day administration of that domain-connected workstation.
 
-This lab demonstrates practical Windows administration tasks performed on a domain-joined Windows client within a Hyper-V environment. The exercises use the client workstation and domain controller already configured in the earlier labs, so no additional virtual machines are required.
+Managing a Windows environment involves more than creating user accounts and joining computers to a domain. IT administrators must also manage local accounts and user profiles, control access permissions, monitor active sessions, troubleshoot workstation issues, maintain storage, and manage domain membership.
 
-The lab focuses on the everyday responsibilities commonly encountered in IT Support and junior Systems Administration, particularly when investigating account access, user profile behaviour, permissions, sign-in sessions, workstation maintenance, and domain connectivity.
+This lab uses the existing client workstation and Domain Controller to demonstrate practical tasks commonly encountered in IT Support and Systems Administration. No additional virtual machines are required.
 
 ## Lab Objectives
 
@@ -387,9 +387,9 @@ The tasks in this lab reflect practical work carried out by IT Support technicia
 
 ## Summary
 
-This lab moved from Active Directory structure and domain joining into the everyday administration of a Windows client. Across eleven tasks, I created and inspected local accounts, observed profile creation and isolation, tested administrator privileges and folder permissions, monitored concurrent user sessions, recreated a local profile, performed disk cleanup, managed domain membership, and signed in with domain accounts.
+This stage extends the domain environment into workstation administration. Across eleven tasks, the lab covers inspection and creation of local accounts, user profile creation and isolation, administrator privileges and folder permissions, active and disconnected sessions, profile recreation, disk cleanup, domain membership changes, and sign-in with domain accounts.
 
-All exercises were performed using the existing Hyper-V client PC and domain controller environment, reinforcing practical Windows administration without requiring additional virtual machines.
+All exercises use the existing Hyper-V client PC and Domain Controller, demonstrating how workstation accounts, permissions, profiles, and domain connectivity are managed within the infrastructure.
 
 ## Skills Demonstrated
 
@@ -408,3 +408,8 @@ All exercises were performed using the existing Hyper-V client PC and domain con
 - Hyper-V lab administration
 
 
+
+
+## Next Step
+
+Continue to **Lab 08: Deploying Windows Server 2022 as a Read-Only Domain Controller** to extend the existing Active Directory environment with an additional domain controller designed for locations where a writable copy of the directory should not be maintained.
