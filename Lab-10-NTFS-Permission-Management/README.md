@@ -4,13 +4,13 @@
 
 ## Lab Overview
 
-This lab demonstrates how to manage access to shared folders in a Windows Server environment by using Active Directory security groups and NTFS permissions. It builds on the concepts of NTFS and share permissions and applies them to a practical folder structure with different access levels for different roles.
+You will manage access to shared folders in a Windows Server environment by using Active Directory security groups and NTFS permissions. Building on the NTFS and share permission concepts from Lab 09, this exercise applies different access levels to a practical folder structure for different roles.
 
 The configuration includes two security groups, two user accounts, a shared parent folder, and subfolders with distinct permissions. It also demonstrates how to disable inheritance on a subfolder and how to map the shared folder as a network drive from a client PC.
 
 ## What This Lab Covers
 
-NTFS permissions control who can access files and folders on an NTFS-formatted drive and what they are allowed to do. This lab walks through creating security groups and user accounts, assigning permissions at different folder levels, configuring share access, testing the resulting access, and mapping the shared folder as a network drive.
+NTFS permissions control who can access files and folders on an NTFS-formatted drive and what they are allowed to do. You will create security groups and user accounts, assign permissions at different folder levels, configure share access, test the resulting access, and map the shared folder as a network drive.
 
 ## Key Concepts Applied
 
@@ -271,7 +271,7 @@ Typing a full network path every time is inconvenient. Mapping a network drive g
 
 ## Conclusion
 
-This lab built a real, working example of layered NTFS permissions: two security groups, two users, a shared parent folder with Full Control for senior staff, and two subfolders carrying completely different permission levels for junior staff, with Modify in Code, Read-only in Infra, and inheritance disabled on Infra so its permissions remain explicit and independent.
+You have built a working example of layered NTFS permissions: two security groups, two users, a shared parent folder with Full Control for senior staff, and two subfolders carrying different permission levels for junior staff, with Modify in Code, Read-only in Infra, and inheritance disabled on Infra so its permissions remain explicit and independent.
 
 The two test runs confirmed the setup actually behaves the way it was configured, not just the way it was intended. Test Run 1, using Amara Nwoye's CLOUD SNR account, confirmed that a member of the senior group could authenticate to the share, browse the full Cloud Files structure, and freely create and manage content anywhere inside it, proving Full Control was working correctly. Test Run 2, using Chizaram Kelvin's CLOUD ENG account, confirmed the split access design worked as designed. The same user account could create and edit files inside Code, proving Modify, but could only view files inside Infra and could not delete them, proving Read-only with inheritance disabled so the restriction held. The same group therefore had two completely different permission levels depending on which subfolder was being accessed.
 
