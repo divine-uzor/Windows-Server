@@ -2,7 +2,9 @@
 
 ## Lab Exercise
 
-This lab continues from Lab 4, where we installed the Active Directory Domain Services (AD DS) role and promoted Windows Server to a Domain Controller for the `divineuzor.com` domain. All tasks in this lab will be performed on that Domain Controller.
+Following the creation of the `divineuzor.com` domain and promotion of the first Domain Controller in Lab 04, this stage of the Windows Server Infrastructure Project focuses on establishing the directory structure and identity objects used to manage the organization.
+
+All tasks in this lab are performed on the Domain Controller. The exercise creates departmental Organizational Units (OUs), provisions user accounts through Active Directory Users and Computers (ADUC) and Active Directory Administrative Center (ADAC), and groups the accounts for centralized access management.
 
 By the end of this lab, we will:
 
@@ -114,8 +116,11 @@ Groups are how real admins assign permissions efficiently. Instead of granting a
 
 ## Summary
 
-In this lab, we moved from theory to hands-on administration within our Active Directory environment. We created a departmental Organizational Unit (OU) structure, provisioned user accounts using both Active Directory Users and Computers (ADUC) and the Active Directory Administrative Center (ADAC), and organized those accounts into a security group to demonstrate how identities and access are managed in an enterprise environment.
+This stage establishes the initial directory structure and user access objects within the `divineuzor.com` Active Directory environment. The HR and IT departmental Organizational Units and their sub-units provide a structured location for directory objects. User accounts were created using both Active Directory Users and Computers (ADUC) and Active Directory Administrative Center (ADAC), then added to the IT Staff security group.
 
-These foundational tasks reflect how Active Directory is used in real organizations.
+Organizational Units provide structure for managing directory objects, user accounts represent individual identities, and security groups provide a practical way to organize users for resource access. These objects form the basis for the domain administration and access management activities carried out in the subsequent labs.
 
-Organizational Units provide structure, user accounts represent identities, and security groups simplify access management. Together, they form the foundation for more advanced Active Directory administration, including Group Policy, delegation of control, and resource permissions.
+
+## Next Steps
+
+Continue to **Lab 06: Joining a Client PC to the Domain** to build a Windows 10 client virtual machine, configure its network settings to communicate with the Domain Controller, join it to the `divineuzor.com` domain, and verify its computer object in Active Directory.
