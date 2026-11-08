@@ -140,7 +140,7 @@ At this stage, no additional server roles or features need to be installed as pa
 
 ## Expected Outcome
 
-Windows Server 2019 is installed on the Hyper-V virtual machine, the built-in Administrator account is configured, and an initial static IPv4 address has been assigned. The network configuration has been checked using `ipconfig`, and Server Manager opens successfully. The server is now prepared for the post-installation configuration and directory services deployment that follow.
+You have installed Windows Server 2019 on the Hyper-V virtual machine, configured the built-in Administrator account, and assigned an initial static IPv4 address. You have checked the network configuration using `ipconfig` and confirmed that Server Manager opens successfully. The server is now prepared for the post-installation configuration and directory services deployment that follow.
 
 ## Next Steps
 
