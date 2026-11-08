@@ -2,9 +2,9 @@
 
 ## Post-Installation Configuration and Promoting the Server to a Domain Controller
 
-This stage of the Windows Server Infrastructure Project prepares the installed Windows Server 2019 system for centralized identity and access management. Building on the initial server configuration completed in Lab 03, this lab covers post-installation tasks, installation of the Active Directory Domain Services (AD DS) role, and promotion of the server to the first Domain Controller (DC) in a new forest.
+You now prepare the Windows Server 2019 system for centralized identity and access management. Building on the initial server configuration in Lab 03, you complete post-installation tasks, install the Active Directory Domain Services (AD DS) role, and promote the server to the first Domain Controller (DC) in a new forest.
 
-The resulting `divineuzor.com` domain provides the central directory environment used in the following labs to organize computers and users, manage groups, and apply domain-based security and administration.
+The resulting `divineuzor.com` domain provides the central directory environment you will use in the following labs to organize computers and users, manage groups, and apply domain-based security and administration.
 
 ## Step 1: Post-Installation Configuration
 
@@ -146,6 +146,6 @@ For this lab, we will use divineuzor.com.
 
 ## Up Next
 
-The Windows Server system has been promoted to the first Domain Controller for the `divineuzor.com` forest. The environment now has an Active Directory domain that can provide centralized identity and security management for domain users and computers.
+You have promoted the Windows Server system to the first Domain Controller for the `divineuzor.com` forest. Your environment now has an Active Directory domain that provides the foundation for centralized identity and security management for domain users and computers.
 
 Continue to **Lab 05: Active Directory Domain Services (AD DS)** to create the organizational unit structure, provision domain user accounts, and organize users into a security group.
