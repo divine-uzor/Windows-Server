@@ -311,7 +311,7 @@ If all items above are complete, the virtual machine is ready for operating syst
 
 # Key Takeaways
 
-This stage of the Windows Server Infrastructure Project establishes the virtual machine that will host the first Windows Server system. The VM storage location, isolated private network, installation media, and Generation 2 hardware configuration have been prepared and verified before operating system installation.
+You have prepared the virtual machine that will host the first Windows Server system in the Windows Server Infrastructure Project. The VM storage location, isolated private network, installation media, and Generation 2 hardware configuration are in place and verified before operating system installation.
 
 Verifying these settings at this stage provides a controlled starting point for the Windows Server installation and configuration work that follows.
 
