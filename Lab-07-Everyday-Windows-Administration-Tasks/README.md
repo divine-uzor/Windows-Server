@@ -12,7 +12,7 @@ This lab uses the existing client workstation and Domain Controller to demonstra
 
 ## Lab Objectives
 
-By completing this lab, I demonstrate how to:
+By completing this lab, you will be able to:
 
 - Inspect local accounts and verify local administrator group membership.
 - Create and manage local Windows user accounts.
@@ -387,9 +387,9 @@ The tasks in this lab reflect practical work carried out by IT Support technicia
 
 ## Summary
 
-This stage extends the domain environment into workstation administration. Across eleven tasks, the lab covers inspection and creation of local accounts, user profile creation and isolation, administrator privileges and folder permissions, active and disconnected sessions, profile recreation, disk cleanup, domain membership changes, and sign-in with domain accounts.
+You will extend the domain environment into workstation administration. Across eleven tasks, you will inspect and create local accounts, examine user profile creation and isolation, manage administrator privileges and folder permissions, monitor active and disconnected sessions, recreate a user profile, run Disk Cleanup, change domain membership, and sign in with domain accounts.
 
-All exercises use the existing Hyper-V client PC and Domain Controller, demonstrating how workstation accounts, permissions, profiles, and domain connectivity are managed within the infrastructure.
+You will use the existing Hyper-V client PC and Domain Controller to examine how workstation accounts, permissions, profiles, and domain connectivity are managed within the infrastructure.
 
 ## Skills Demonstrated
 
