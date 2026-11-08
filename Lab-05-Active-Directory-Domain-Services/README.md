@@ -6,7 +6,7 @@ Following the creation of the `divineuzor.com` domain and promotion of the first
 
 All tasks in this lab are performed on the Domain Controller. The exercise creates departmental Organizational Units (OUs), provisions user accounts through Active Directory Users and Computers (ADUC) and Active Directory Administrative Center (ADAC), and groups the accounts for centralized access management.
 
-By the end of this lab, we will:
+By the end of this lab, you will be able to:
 
 - Create two Organizational Units (OUs) representing the HR and IT departments.
 - Create two sub-Organizational Units under each department OU.
@@ -116,9 +116,9 @@ Groups are how real admins assign permissions efficiently. Instead of granting a
 
 ## Summary
 
-This stage establishes the initial directory structure and user access objects within the `divineuzor.com` Active Directory environment. The HR and IT departmental Organizational Units and their sub-units provide a structured location for directory objects. User accounts were created using both Active Directory Users and Computers (ADUC) and Active Directory Administrative Center (ADAC), then added to the IT Staff security group.
+You have established the initial directory structure and user access objects within the `divineuzor.com` Active Directory environment. The HR and IT departmental Organizational Units and their sub-units provide structured locations for directory objects. You created user accounts using both Active Directory Users and Computers (ADUC) and Active Directory Administrative Center (ADAC), then added both accounts to the IT Staff security group.
 
-Organizational Units provide structure for managing directory objects, user accounts represent individual identities, and security groups provide a practical way to organize users for resource access. These objects form the basis for the domain administration and access management activities carried out in the subsequent labs.
+You can now use Organizational Units to organize directory objects, user accounts to represent individual identities, and security groups to manage resource access. These objects provide the foundation for the domain administration and access management activities in the subsequent labs.
 
 
 ## Next Steps
