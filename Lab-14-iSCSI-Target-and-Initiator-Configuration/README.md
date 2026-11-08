@@ -339,11 +339,11 @@ Anything saved to M: on DC02 is stored inside the VHDX file on DC01.
 
 ## Conclusion
 
-In this lab I installed the iSCSI Target Server role on one domain
-controller, created an iSCSI virtual disk and target, and connected a
-second domain controller to it using the iSCSI Initiator. I then
-initialized the disk, created an NTFS volume, and confirmed that the
-data is stored on the target server. This is how Windows Server provides
-a simple, flexible Storage Area Network.
+In this lab, you install the iSCSI Target Server role on one domain
+controller, create an iSCSI virtual disk and target, and connect a
+second domain controller using the iSCSI Initiator. You then initialize
+the disk, create an NTFS volume, and verify that data written from the
+initiator is stored on the target server. This demonstrates how Windows
+Server can provide remote block storage over a network.
 
 
