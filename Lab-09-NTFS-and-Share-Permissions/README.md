@@ -20,7 +20,7 @@ This lab reuses accounts created in earlier labs:
 | User | Organizational Unit | Purpose in this lab |
 |---|---|---|
 | Glory Davies | IT → Software Engineer | Receives NTFS permissions from two sources |
-| Amaka Okoye | IT → Cloud Engineer | Joins the IT-Staff security group |
+| Amaka Okoye | IT → Cloud Engineer | Joins the IT Staff security group |
 | Chisom CM Mmesoma | Sales | Tests default-deny behavior |
 | Ada Obi | HR | Created in Task 1 and later used to demonstrate an explicit Deny |
 
@@ -49,16 +49,16 @@ Ada Obi is created in the HR OU because no user currently exists there.
 
 ### Task 2: Create a Security Group for IT Staff
 
-Permissions are assigned to a group rather than individually to each user. This task creates `IT-Staff` and adds Glory Davies and Amaka Okoye so that folder permissions can be assigned once to the group.
+Permissions are assigned to a group rather than individually to each user. This task creates `IT Staff` and adds Glory Davies and Amaka Okoye so that folder permissions can be assigned once to the group.
 
 1. In Active Directory Users and Computers, right-click the **IT** OU, select **New**, then **Group**.
-2. Enter `IT-Staff` as the group name. Leave **Group scope** set to **Global** and **Group type** set to **Security**, then select **OK**.
-3. Double-click the new **IT-Staff** group, open the **Members** tab, and select **Add**.
+2. Enter `IT Staff` as the group name. Leave **Group scope** set to **Global** and **Group type** set to **Security**, then select **OK**.
+3. Double-click the new **IT Staff** group, open the **Members** tab, and select **Add**.
 4. Enter `Glory Davies; Amaka Okoye`, select **Check Names**, then select **OK**. Select **OK** again to close the group's Properties window.
 
-   ![Create the IT-Staff group and add its members](images/05-create-it-staff-security-group.png)
+   ![Create the IT Staff group and add its members](images/05-create-it-staff-security-group.png)
 
-**Why use a group?** Adding users directly to folder permissions would require editing the folder each time someone joins the IT team. With group-based permissions, new team members can be added to `IT-Staff` without changing the folder's permission entries.
+**Why use a group?** Adding users directly to folder permissions would require editing the folder each time someone joins the IT team. With group-based permissions, new team members can be added to `IT Staff` without changing the folder's permission entries.
 
 ### Task 3: Create the Shared Folder
 
@@ -69,24 +69,24 @@ Permissions are assigned to a group rather than individually to each user. This 
 
 ### Task 4: Assign NTFS Permissions (Rule 1)
 
-This task gives Glory Davies NTFS permission from two sources: directly and through the `IT-Staff` group.
+This task gives Glory Davies NTFS permission from two sources: directly and through the `IT Staff` group.
 
 1. Right-click **IT Projects**, select **Properties**, then open the **Security** tab.
 2. Select **Edit**, then **Add**.
 
    ![Open the folder security settings](images/07-open-folder-ntfs-security-properties.png)
 
-3. Enter `IT-Staff`, select **Check Names**, then **OK**.
-4. With **IT-Staff** selected, select the **Allow** box next to **Modify**, then select **Apply**.
+3. Enter `IT Staff`, select **Check Names**, then **OK**.
+4. With **IT Staff** selected, select the **Allow** box next to **Modify**, then select **Apply**.
 
-   ![Add IT-Staff and configure its NTFS permission](images/08-add-it-staff-to-ntfs-permissions.png)
+   ![Add IT Staff and configure its NTFS permission](images/08-add-it-staff-to-ntfs-permissions.png)
 
 5. Select **Add** again. Enter `Glory Davies`, select **Check Names**, then **OK**.
 6. With **Glory Davies** selected, select only **Allow** next to **Read**. Do not select **Modify** for her individual entry. Select **Apply**, then **OK**.
 
    ![Configure Glory Davies direct NTFS permission](images/09-configure-it-staff-modify-permission.png)
 
-**What this establishes:** Glory Davies has Read assigned directly and Modify assigned through `IT-Staff`. Under the lab's first rule, her effective NTFS permission should be Modify, the higher of the two Allow permissions. Task 5 checks this using Effective Access.
+**What this establishes:** Glory Davies has Read assigned directly and Modify assigned through `IT Staff`. Under the lab's first rule, her effective NTFS permission should be Modify, the higher of the two Allow permissions. Task 5 checks this using Effective Access.
 
 ### Task 5: Verify Rule 1 With the Effective Access Tab
 
@@ -115,15 +115,15 @@ The folder is shared over the network with a permission deliberately more restri
    ![Open Advanced Sharing for IT Projects](images/13-open-advanced-sharing-settings.png)
 
 3. Select the default **Everyone** entry and select **Remove**.
-4. Select **Add**, enter `IT-Staff`, select **Check Names**, then **OK**.
+4. Select **Add**, enter `IT Staff`, select **Check Names**, then **OK**.
 
-   ![Replace Everyone with the IT-Staff group](images/14-configure-share-permissions-for-it-staff.png)
+   ![Replace Everyone with the IT Staff group](images/14-configure-share-permissions-for-it-staff.png)
 
-5. With **IT-Staff** selected, select only **Allow** next to **Read**. Select **Apply**, **OK**, **OK** again, then **Close**.
+5. With **IT Staff** selected, select only **Allow** next to **Read**. Select **Apply**, **OK**, **OK** again, then **Close**.
 
-   ![Assign Read share permission to IT-Staff](images/15-assign-read-share-permission-to-it-staff.png)
+   ![Assign Read share permission to IT Staff](images/15-assign-read-share-permission-to-it-staff.png)
 
-**What this establishes:** `IT-Staff` has Modify on the NTFS side but only Read on the share side. When a member accesses the folder over the network, the more restrictive share permission limits the effective access to Read.
+**What this establishes:** `IT Staff` has Modify on the NTFS side but only Read on the share side. When a member accesses the folder over the network, the more restrictive share permission limits the effective access to Read.
 
 ### Task 7: Test Network Access as Glory Davies (Rule 2 in Action)
 
@@ -187,7 +187,7 @@ By default, standard users are not generally permitted to sign in locally to a d
 
 ### Task 9: Confirm Default-Deny Behavior
 
-Chisom CM Mmesoma, in the Sales OU, has not been added to `IT-Staff` and has no direct permission on **IT Projects**. This task confirms that NTFS does not grant access by default.
+Chisom CM Mmesoma, in the Sales OU, has not been added to `IT Staff` and has no direct permission on **IT Projects**. This task confirms that NTFS does not grant access by default.
 
 1. On the client PC, sign out and sign back in as Chisom CM Mmesoma's domain account.
 
@@ -203,11 +203,11 @@ Chisom should be blocked from accessing the shared folder. Because she has no NT
 
 This task uses Ada Obi, created in Task 1, to demonstrate that an explicit NTFS Deny overrides an Allow.
 
-1. In Active Directory Users and Computers, double-click **IT-Staff**, open the **Members** tab, select **Add**, enter `Ada Obi`, select **Check Names**, then **OK** twice.
+1. In Active Directory Users and Computers, double-click **IT Staff**, open the **Members** tab, select **Add**, enter `Ada Obi`, select **Check Names**, then **OK** twice.
 
-   ![Add Ada Obi to the IT-Staff group](images/27-add-ada-obi-to-it-staff-group.png)
+   ![Add Ada Obi to the IT Staff group](images/27-add-ada-obi-to-it-staff-group.png)
 
-**Why add an HR user to an IT group?** This is a deliberate lab setup. Ada receives Modify through `IT-Staff`; the next steps add an explicit Deny directly to her account to demonstrate how Deny overrides that Allow. This is not a recommendation to add HR users to IT groups in a production environment.
+**Why add an HR user to an IT group?** This is a deliberate lab setup. Ada receives Modify through `IT Staff`; the next steps add an explicit Deny directly to her account to demonstrate how Deny overrides that Allow. This is not a recommendation to add HR users to IT groups in a production environment.
 
 2. On DC01, right-click **IT Projects**, select **Properties**, open the **Security** tab, select **Edit**, then **Add**. Enter `Ada Obi`, select **Check Names**, then **OK**.
 3. With **Ada Obi** selected, select **Deny** next to **Write**, then select **Apply**. Windows displays a security warning about Deny entries; select **Yes** to confirm.
@@ -218,7 +218,7 @@ This task uses Ada Obi, created in Task 1, to demonstrate that an explicit NTFS 
 
    ![Review Ada Obi effective access settings](images/29-review-ada-obi-effective-access-settings.png)
 
-Ada Obi's Effective Access result shows Write and Create actions denied because of the NTFS File Permissions. Her explicit Deny overrides the Modify Allow inherited through `IT-Staff`.
+Ada Obi's Effective Access result shows Write and Create actions denied because of the NTFS File Permissions. Her explicit Deny overrides the Modify Allow inherited through `IT Staff`.
 
    ![Verify explicit Deny in Effective Access](images/30-verify-explicit-deny-in-effective-access.png)
 
@@ -237,4 +237,4 @@ You created a shared folder, assigned NTFS and share permissions using Active Di
 
 The exercises demonstrated that multiple NTFS Allow permissions combine, an explicit Deny overrides an Allow, and network access is limited by whichever is more restrictive between NTFS and share permissions. Local access on the server is governed by NTFS permissions alone.
 
-The `IT Projects` folder, `IT-Staff` group, and Ada Obi account can be retained for future labs or removed if the environment is being reset.
+The `IT Projects` folder, `IT Staff` group, and Ada Obi account can be retained for future labs or removed if the environment is being reset.
