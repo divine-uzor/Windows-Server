@@ -2,11 +2,11 @@
 
 An end-to-end Windows Server infrastructure build, documented from initial Hyper-V setup through domain services, centralized administration, file services, DHCP high availability, and PowerShell-based administration.
 
-This project brings together 17 connected implementation labs. Each stage builds on the environment and configuration established in earlier stages, resulting in a small, multi-server Windows domain environment that can be used to demonstrate core Windows Server administration tasks.
+This project brings together 18 connected implementation labs. Each stage builds on the environment and configuration established in earlier stages, resulting in a small, multi-server Windows domain environment that can be used to demonstrate core Windows Server administration tasks.
 
 ## Project Overview
 
-The project follows a practical infrastructure scenario: establish a virtualized Windows Server environment, deploy and manage an Active Directory domain, connect a client computer, apply access and configuration controls, provide shared storage and namespace services, improve DHCP service availability, and administer the environment with PowerShell.
+The project follows a practical infrastructure scenario: establish a virtualized Windows Server environment, deploy and manage an Active Directory domain, connect a client computer, apply access and configuration controls, provide shared storage and namespace services, improve DHCP service availability, administer the environment with PowerShell, and automate employee identity lifecycle operations.
 
 Rather than treating the exercises as unrelated tasks, the repository documents the progressive build and administration of the same lab environment.
 
@@ -75,6 +75,14 @@ Configure resilient address assignment and use PowerShell to inspect, manage, an
 | [Lab 16 – DHCP High Availability and Failover](Lab-16-DHCP-High-Availability-and-Failover/) | Configure DHCP failover between servers and verify address assignment and failover behaviour. |
 | [Lab 17 – Windows Server Administration with PowerShell](Lab-17-Windows-Server-Administration-with-PowerShell/) | Use PowerShell for system diagnostics, Active Directory administration, bulk user creation, service and role inspection, share administration, remote management, reporting, and cleanup. |
 
+### Phase 6: Automate Employee Identity Lifecycle
+
+Build on the existing Active Directory environment to automate employee onboarding, role changes, and offboarding. Use PowerShell scripts and CSV-based requests to manage user accounts, organizational unit placement, and role-based group memberships, then review the resulting changes through logs, replication checks, and client-side verification.
+
+| Lab | Implementation |
+|---|---|
+| [Lab 18 – Employee Lifecycle Automation](Lab-18-Employee-Lifecycle-Automation/) | Automate employee onboarding, role changes, and offboarding in Active Directory using PowerShell and structured request files. |
+
 ## Infrastructure Capabilities Demonstrated
 
 The completed lab sequence documents practical administration across these areas:
@@ -85,6 +93,7 @@ The completed lab sequence documents practical administration across these areas
 - **Storage and file services:** Disk Management, Storage Pools, iSCSI, DFS Namespaces, and DFS Replication.
 - **Network services:** DHCP configuration, address assignment, and DHCP failover.
 - **Automation and remote administration:** PowerShell commands, CSV-based bulk user provisioning, remote server administration, reporting, and administrative cleanup.
+- **Employee identity lifecycle:** PowerShell-based onboarding, role changes, offboarding, and role-based access management in Active Directory.
 
 ## How to Use This Repository
 
@@ -120,6 +129,7 @@ Windows-Server/
 ├── Lab-15-DFS-Namespaces-and-Replication/
 ├── Lab-16-DHCP-High-Availability-and-Failover/
 ├── Lab-17-Windows-Server-Administration-with-PowerShell/
+├── Lab-18-Employee-Lifecycle-Automation/
 ├── LICENSE
 └── README.md
 ```
@@ -140,4 +150,4 @@ Windows-Server/
 
 ---
 
-**Project status:** 17 implementation labs documented and committed.
+**Project status:** 18 implementation labs documented and committed.
