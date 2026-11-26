@@ -1,0 +1,7 @@
+Department,JobTitle,TargetOU,Groups
+HR,Recruitment Officer,Recruitment,HR Staff
+HR,Payroll Officer,Payroll,HR Staff
+IT,Cloud Engineer,Cloud Engineer,IT Staff;CLOUD ENG
+IT,Software Engineer,Software Engineer,IT Staff
+IT,IT Support,IT,IT Staff
+Sales,Sales Representative,Sales,Sales Staff
