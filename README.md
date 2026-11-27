@@ -101,8 +101,6 @@ The implementation is documented in sequence. Start with Lab 01 and work through
 
 Each lab folder contains its own `README.md` with the relevant scenario, implementation steps, commands or configuration details, screenshots, and verification where included in that lab.
 
-The `Foundations/` directory contains supporting foundational material.
-
 ## Project Scope
 
 This is a hands-on virtual lab project built to demonstrate Windows Server infrastructure deployment and administration. Configurations and results are documented in the individual labs. The environment is a controlled practice environment and should not be interpreted as a production deployment design without further assessment, security hardening, capacity planning, backup strategy, and operational controls.
@@ -111,7 +109,6 @@ This is a hands-on virtual lab project built to demonstrate Windows Server infra
 
 ```text
 Windows-Server/
-├── Foundations/
 ├── Lab-01-System-Requirements-and-Enabling-Hyper-V/
 ├── Lab-02-Building-a-Windows-Server-2019-Lab/
 ├── Lab-03-Installing-and-Configuring-Windows-Server-2019/
